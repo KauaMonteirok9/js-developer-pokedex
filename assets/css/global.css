@@ -1,24 +1,30 @@
+/* Define um estilo padrão para todos os elementos com a fonte Roboto e uma caixa de modelagem de borda */
 * {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f6f8fc;
-}
-
-.content {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
-}
-
-@media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
-    }
-}
+    font-family: 'Roboto', sans-serif; 
+    box-sizing: border-box;   
+ }
+ 
+ /* Estilos gerais para o corpo do documento HTML */
+ body {
+     background-color: #f6f8fc;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ /* Estilos para a classe "content" */
+ .content {
+     width: 100hv; /* Deve ser "100vh" para ocupar a altura total da viewport */
+     padding: 1rem; /* Espaçamento interno de 1rem */
+     background-color: white;
+     height: 100vh; /* Deve ser "100vh" para ocupar a altura total da viewport */
+ }
+ 
+ /* Estilos de mídia (tamanhos de tela específicos) para ".content" */
+ @media screen and (min-width: 992px) {
+     .content {
+         max-width: 992px;
+         height: auto; /* Torna a altura automática */
+         margin: 1rem auto; /* Margens superior e inferior de 1rem, centralizando horizontalmente */
+         border-radius: 1rem; /* Borda arredondada de 1rem */
+     }
+ }

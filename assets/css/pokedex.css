@@ -1,104 +1,101 @@
-.pokemons {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+/* Estilos para a classe ".pokemon-link" */
+.pokemon-link {
+    text-decoration: none; 
+    color: white; 
 }
 
+/* Estilos para a classe ".pokemons" */
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna responsiva */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para tipos de Pokémon com fundo colorido */
+/* (Cada classe representa um tipo de Pokémon, por exemplo, ".grass" para tipo grama) */
 .normal {
     background-color: #a6a877;
 }
-
 .grass {
     background-color: #77c850;
 }
-
 .fire {
     background-color: #ee7f30;
 }
-
 .water {
     background-color: #678fee;
-}
-
-.electric {
-    background-color: #f7cf2e;
-}
-
+    }
+.electric{
+    background-color:  #f7cf2e;
+    }
 .ice {
     background-color: #98d5d7;
-}
-
+    }
 .ground {
     background-color: #dfbf69;
-}
-
+    }
 .flying {
     background-color: #a98ff0;
-}
-
+    }
 .poison {
-    background-color: #a040a0;
-}
-
+    background-color: #a646a0;
+    }
 .fighting {
     background-color: #bf3029;
-}
-
+    }
 .psychic {
     background-color: #f65687;
-}
-
+    }
 .dark {
-    background-color: #725847;
-}
-
+    background-color: #f25847;
+    }
 .rock {
     background-color: #b8a137;
-}
-
+    }
 .bug {
     background-color: #a8b720;
-}
-
+    }
 .ghost {
     background-color: #6e5896;
-}
-
+    }
 .steel {
     background-color: #b9b7cf;
-}
-
+    }
 .dragon {
     background-color: #6f38f6;
-}
-
+    }
 .fairy {
     background-color: #f9aec7;
 }
 
+/* Estilos para a classe ".pokemon" */
 .pokemon {
     display: flex;
     flex-direction: column;
     margin: .5rem;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 1rem; /* Borda arredondada de 1rem */
+    color: white;
 }
 
+/* Estilos para o número do Pokémon dentro da classe ".pokemon" */
 .pokemon .number {
-    color: #000;
+    color: black;
     opacity: .3;
     text-align: right;
-    font-size: .625rem;
+    font-size: .625rem; /* Tamanho de fonte de 0.625rem (equivale a 10px) */
 }
 
+/* Estilos para o nome do Pokémon dentro da classe ".pokemon" */
 .pokemon .name {
-    text-transform: capitalize;
-    color: #fff;
+    color: white;
     margin-bottom: .25rem;
+    text-transform: capitalize; /* Transforma o texto em letras maiúsculas */
 }
 
+/* Estilos para a seção de detalhes do Pokémon dentro da classe ".pokemon" */
 .pokemon .detail {
     display: flex;
     flex-direction: row;
@@ -106,27 +103,31 @@
     justify-content: space-between;
 }
 
+/* Estilos para a lista de tipos dentro da seção de detalhes do Pokémon */
 .pokemon .detail .types {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
+/* Estilos para cada tipo de Pokémon dentro da lista de tipos */
 .pokemon .detail .types .type {
-    color: #fff;
+    color: white;
     padding: .25rem .5rem;
     margin: .25rem 0;
-    font-size: .625rem;
-    border-radius: 1rem;
-    filter: brightness(1.1);
+    font-size: .625rem; /* Tamanho de fonte de 0.625rem (equivale a 10px) */
+    border-radius: 1rem; /* Borda arredondada de 1rem */
+    filter: brightness(1.1); /* Ajusta o brilho */
     text-align: center;
 }
 
+/* Estilos para a imagem do Pokémon dentro da seção de detalhes */
 .pokemon .detail img {
     max-width: 100%;
     height: 70px;
 }
 
+/* Estilos para a paginação */
 .pagination {
     display: flex;
     flex-direction: row;
@@ -136,30 +137,32 @@
     padding: 1rem;
 }
 
+/* Estilos para o botão de paginação */
 .pagination button {
     padding: .25rem .5rem;
     margin: .25rem 0;
-    font-size: .625rem;
-    color: #fff;
+    font-size: .625rem; /* Tamanho de fonte de 0.625rem (equivale a 10px) */
+    color: white;
     background-color: #6c79db;
     border: none;
-    border-radius: 1rem;
+    border-radius: 1rem; /* Borda arredondada de 1rem */
 }
 
+/* Estilos de mídia (tamanhos de tela específicos) para ".pokemons" */
 @media screen and (min-width: 380px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; /* Duas colunas responsivas */
     }
 }
 
 @media screen and (min-width: 576px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ; /* Três colunas responsivas */
     }
 }
 
 @media screen and (min-width: 992px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Quatro colunas responsivas */
     }
 }
